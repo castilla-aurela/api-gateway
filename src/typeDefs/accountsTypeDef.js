@@ -1,6 +1,6 @@
 const { gql } = require('apollo-server');
 
-const accountTypeDefs = gql`
+const AccountsTypeDefs = gql`
     type Account {
         userId: String!
         balance: Int
@@ -12,4 +12,4 @@ const accountTypeDefs = gql`
     }
 `;
 
-module.exports = accountTypeDefs; 
+module.exports = AccountsTypeDefs; 

@@ -1,7 +1,7 @@
 const { gql } = require('apollo-server');
 
-const transacctionTypeDefs = gql`
-    type Transacction {
+const TransacctionsTypeDefs = gql`
+    type Transaction {
         id: String!
         userIdOrigin: String
         userIdDestiny: String
@@ -9,19 +9,19 @@ const transacctionTypeDefs = gql`
         date: String
     }
     
-    input TransacctionInput {
+    input TransactionInput {
         userIdOrigin: String
         userIdDestiny: String
         value: Int
     }
 
     extend type Query {
-        transacctionByIdUser(userId: String!): [Transacction]
+        transactionsByIdUser(userId: String!): [Transaction]
     }
     
     type Mutation {
-        createTransacction(transaction: TransacctionInput!): Transacction
+        createTransaction(transaction: TransactionInput!): Transaction
     }
 `;
 
-module.exports = transacctionTypeDefs; 
+module.exports = TransacctionsTypeDefs; 
