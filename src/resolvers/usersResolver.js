@@ -1,6 +1,6 @@
 const usersResolver = {
     Mutation: {
-        authenticate: (_, { credentials }, { dataSources }) => dataSources.usersAPI.authRequest(credentials),
+        authenticate: (_, { credentials }, { dataSources }) => dataSources.usersAPI.authenticate(credentials),
         refreshToken: (_, { refresh }, { dataSources }) => dataSources.usersAPI.refreshToken(refresh),
     }
 };

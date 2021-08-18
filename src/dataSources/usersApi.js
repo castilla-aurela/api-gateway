@@ -14,7 +14,7 @@ class UsersAPI extends RESTDataSource {
     }
 
     async refreshToken(refresh) {
-        token = new Object(JSON.parse(JSON.stringify({refresh: token})));
+        refresh = new Object(JSON.parse(JSON.stringify({refresh: refresh})));
         return await this.post(`/token/refresh/`, refresh);
     }
 }

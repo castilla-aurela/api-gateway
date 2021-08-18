@@ -1,6 +1,6 @@
-const accountResolver = require('./account_resolver');
-const transactionResolver = require('./transaction_resolver');
-const userResolver = require('./users_resolver');
+const accountResolver = require('./accountResolver');
+const transactionResolver = require('./transactionResolver');
+const userResolver = require('./usersResolver');
 
 const lodash = require('lodash');
 

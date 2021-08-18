@@ -12,7 +12,7 @@ class AccountAPI extends RESTDataSource {
     return await this.get(`/accounts/${userId}`);    
   }
 
-  async createTransacction(transacction){
+  async createTransaction(transacction){
     transacction = new Object(JSON.parse(JSON.stringify(transacction)));
     return await this.post('/transactions', transacction);    
   }

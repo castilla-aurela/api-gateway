@@ -2,7 +2,7 @@ const accountResolver = {
     Query: {
         accountByUserId: (_, {userId}, { dataSources, userIdToken}) => {
             if(userId == userIdToken) 
-                return dataSources.accountAPI.accountByUserId(userId)
+                return dataSources.accountsAPI.accountByUserId(userId)
             else
                 return null
         },

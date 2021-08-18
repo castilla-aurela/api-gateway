@@ -1,6 +1,6 @@
 const { gql } = require('apollo-server');
 
-const TransacctionsTypeDefs = gql`
+const TransactionsTypeDefs = gql`
     type Transaction {
         id: String!
         userIdOrigin: String
@@ -24,4 +24,4 @@ const TransacctionsTypeDefs = gql`
     }
 `;
 
-module.exports = TransacctionsTypeDefs; 
+module.exports = TransactionsTypeDefs; 

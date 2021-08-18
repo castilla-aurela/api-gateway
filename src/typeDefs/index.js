@@ -1,10 +1,10 @@
 //Se llama al typedef (esquema) de cada submodulo
-const accountTypeDefs = require('./accountsTypeDefs');
-const transacctionTypeDefs = require('./transactionsTypeDef');
-const usersTypeDefs = require('./usersTypeDefs');
+const accountsTypeDefs = require('./accountsTypeDef');
+const transactionTypeDefs = require('./transactionsTypeDef');
+const usersTypeDefs = require('./usersTypeDef');
 
 //Se unen
-const schemasArrays = [accountTypeDefs, transacctionTypeDefs, usersTypeDefs];
+const schemasArrays = [accountsTypeDefs, transactionTypeDefs, usersTypeDefs];
 
 //Se exportan
 module.exports = schemasArrays; 
